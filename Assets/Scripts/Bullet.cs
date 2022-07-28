@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            collision.GetComponent<Enemy>().TakeDamage(damage);
+            collision.GetComponent<HealthSystem>().TakeDamage(damage);
 
             GameObject effect = Instantiate(BulletDestroyEffect, transform.position, Quaternion.identity);
             Destroy(effect, 0.25f);

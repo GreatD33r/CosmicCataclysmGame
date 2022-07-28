@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49e6a42339d9de4ebb2d6ffc8275357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotateSpeed: 1
-  speed: -2
+  DestroyEffect: {fileID: 5392763592543016288, guid: c07ff00023d035a4fa3954fc37cfedc4, type: 3}
+  damage: 1
 --- !u!114 &-3810576698460089361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  DestroyEffect: {fileID: 5392763592543016288, guid: c07ff00023d035a4fa3954fc37cfedc4, type: 3}
+  delay: 0.5
 --- !u!50 &2940349367316630194
 Rigidbody2D:
   serializedVersion: 4

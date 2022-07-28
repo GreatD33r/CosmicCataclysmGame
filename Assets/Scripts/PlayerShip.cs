@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerShip : MonoBehaviour
 {
-
     private Rigidbody2D rb;
     public Animator animator;
     private Vector2 direction;
