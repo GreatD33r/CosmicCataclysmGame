@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Gun : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Gun : MonoBehaviour
     private float timeBtwShots;
     public float startTimeBtwShots;
     public float BulletSpeed;
+    public static Action Shoot;
 
     private void Update()
     {
@@ -20,7 +22,7 @@ public class Gun : MonoBehaviour
                 GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
                 Rigidbody2D newBulletRB = newBullet.GetComponent<Rigidbody2D>();
                 newBulletRB.AddForce(transform.up * BulletSpeed, ForceMode2D.Impulse);
-
+                Shoot?.Invoke();
                 timeBtwShots = startTimeBtwShots;
             }
         }

@@ -137,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyEffect: {fileID: 5392763592543016288, guid: c07ff00023d035a4fa3954fc37cfedc4, type: 3}
   damage: 1
+  points: 2
 --- !u!114 &4466912968367933696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,3 +153,5 @@ MonoBehaviour:
   health: 1
   DestroyEffect: {fileID: 5392763592543016288, guid: c07ff00023d035a4fa3954fc37cfedc4, type: 3}
   delay: 0.42
+  isEnemy: 1
+  addedPoints: 2

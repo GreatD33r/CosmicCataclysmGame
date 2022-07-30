@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyEffect: {fileID: 5392763592543016288, guid: c07ff00023d035a4fa3954fc37cfedc4, type: 3}
   damage: 1
+  points: 3
 --- !u!114 &-3810576698460089361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +116,9 @@ MonoBehaviour:
   health: 2
   DestroyEffect: {fileID: 5392763592543016288, guid: c07ff00023d035a4fa3954fc37cfedc4, type: 3}
   delay: 0.5
+  isEnemy: 1
+  StuffManager: {fileID: 0}
+  addedPoints: 3
 --- !u!50 &2940349367316630194
 Rigidbody2D:
   serializedVersion: 4
