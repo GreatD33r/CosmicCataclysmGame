@@ -20,7 +20,7 @@ public class Meteor : MonoBehaviour
         RotateSpeed = UnityEngine.Random.Range(1, 3);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         rb.velocity = new Vector2(speed, 0);
         transform.Rotate(0.0f, 0.0f, RotateSpeed);

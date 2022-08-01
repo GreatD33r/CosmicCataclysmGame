@@ -18,7 +18,7 @@ public class Background : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
     }
